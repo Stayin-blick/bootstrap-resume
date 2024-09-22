@@ -14,11 +14,23 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-skills {
+    background-color: #ffffff;
+}
+
 .bg-color-work-history {
     background-color: #9b59b6;
 }
 
 .bg-color-contact {
+    background-color: #ffffff;
+}
+
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
     background-color: #ffffff;
 }
 
@@ -35,10 +47,30 @@
 }
 
 .ui-menu-color-download {
-    background-color: #525252;
+    background-color: #d9a81d;
 }
 
-/*--------------------------------------------Special padding/margins/text*/
+
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
+
+
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background-color: #525252;
+    color: #555555;
+}
+
+
+/*--------------------------------------------Special Paddings/Margins/Text*/
 
 h1,
 h2,
@@ -52,7 +84,7 @@ h4 {
 }
 
 .general-sub {
-    font-family: "exo 2", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-weight: 300;
     color: #fafafa;
 }
@@ -61,23 +93,19 @@ h4 {
     display: inline-block;
 }
 
+
 .row-table {
     display: table;
 }
 
-.section-column {
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;
-}
-
 .history-heading,
 .section-heading {
-    font-family: "exo 2", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
 }
+
 
 /*--------------------------------------------Heading*/
 
@@ -98,11 +126,10 @@ header {
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
-    background-color: #676767;
 }
 
 .name {
-    font-family: "exo 2", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
@@ -110,20 +137,12 @@ header {
 }
 
 .title {
-    font-family: "roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 200;
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
-    color: #ffffff
-}
-
-.list-inline-item:not(:last-child) {
-    margin: 0;
-}
-
-.menucontainer {
-    font-size: 0;
+    color: #ffffff;
 }
 
 #nav {
@@ -131,7 +150,6 @@ header {
 }
 
 #nav li {
-    font-size: 14px;
     padding: 0;
 }
 
@@ -147,6 +165,7 @@ header {
     color: #ffffff;
     height: 120px;
 }
+
 
 .menuitem a i {
     padding-top: 22px;
@@ -166,12 +185,14 @@ header {
     letter-spacing: 2px;
 }
 
+
 /*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
+
 
 /*--------------------------------------------Footer*/
 
@@ -180,22 +201,21 @@ footer {
     color: #fafafa;
     min-height: 120px;
     margin: 0;
-
 }
 
-.cv-pdf i {
-    font-size: 18px;
+footer .cv-pdf i {
     color: #fafafa;
     text-align: center;
+    font-size: 18px;
     padding-left: 5px;
+}
+
+footer .cv-pdf i:hover {
+    color: #e84610;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-}
-
-.cv-pdf i:hover {
-    color: #e84610;
 }
 
 .social-links {
@@ -223,10 +243,10 @@ footer {
 }
 
 #footer-details {
-    padding: 20px;
+    margin: 20px;
 }
 
-/*--------------------------------------------Three reasons*/
+/*--------------------------------------------Three Reasons*/
 
 .three-reasons-icon {
     font-size: 26px;
@@ -237,7 +257,7 @@ footer {
     margin-bottom: 15px;
 }
 
-/*--------------------------------------------Personal info*/
+/*--------------------------------------------Personal Info*/
 
 .personal-info-item {
     margin-bottom: 20px;
@@ -248,7 +268,6 @@ footer {
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
-    display: inline-block;
 }
 
 .personal-info-item .key p,
@@ -257,6 +276,7 @@ footer {
 }
 
 .personal-info-item .key {
+    display: inline-block;
     width: 30%;
     margin-right: 21px;
     padding-top: 2px;
@@ -268,6 +288,7 @@ footer {
 }
 
 .personal-info-item .value {
+    display: inline-block;
     position: relative;
     width: 60%;
 }
@@ -277,7 +298,6 @@ footer {
 .progress {
     position: relative;
     height: 25px;
-    margin-bottom: 4px;
 }
 
 .progress-type {
@@ -287,21 +307,15 @@ footer {
     padding: 3px 30px 2px 10px;
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2);
-    line-height: 1.5;
 }
+
 
 .progress-section {
     margin: 40px 20px;
-
 }
 
-/*--------------------------------------------Work history*/
 
-.history-heading {
-    color: #fafafa;
-    margin-bottom: 50px;
-
-}
+/*--------------------------------------------Work History*/
 
 .timeline-item {
     padding: 4em 2em 0em 2em;
@@ -315,20 +329,20 @@ footer {
     margin: 0;
 }
 
-.timeline-item:before {
+.timeline-item::before {
     content: attr(data-dates);
     position: absolute;
     left: 2.5em;
     top: 3em;
     display: block;
-    font-family: "exo 2", sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 500;
-    font-size: 0.8em;
+    font-size: .8em;
     padding: 0;
     margin: 0;
 }
 
-.timeline-item:after {
+.timeline-item::after {
     width: 12px;
     height: 12px;
     display: block;
@@ -337,21 +351,27 @@ footer {
     left: -6px;
     border-radius: 12px;
     content: '';
-    background-color: #fafafa;
+    background: #fafafa;
+}
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
 }
 
 .history-items {
     margin-bottom: 30px;
 }
 
-/*--------------------------------------------Contact form*/
+/*--------------------------------------------Contact*/
 
 .contact-heading {
-    font-family: "exo 2", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 20px;
-}
+} 
+
 
 .center-form {
     padding-top: 10px;
@@ -362,15 +382,28 @@ footer {
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    color: #fafafa;
     background-color: #e84610;
+    color: #fafafa;
 }
 
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}
+
+/*--------------------------------------------Media Queries*/
+
 @media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
     .center-form {
         padding-top: 30px;
+        min-height: 240px;
         margin: 0 auto;
         max-width: 50%;
-        min-height: 240px;
     }
 }
