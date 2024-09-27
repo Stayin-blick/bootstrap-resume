@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azeez</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Azeez</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script defer src="assets/js/sendEmail.js"></script>
 </head>
 
 <body>
@@ -65,11 +68,11 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form action="">
-                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required>
-                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
+                    <form id="contact-form">
+                        <input type="text" name="from_name" id="fullname" class="form-control" placeholder="Name" required>
+                        <input type="email" name="from_email" id="emailaddress" class="form-control" placeholder="Email"
                             required>
-                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control"
+                        <textarea rows="5" name="project_request" id="projectsummary" class="form-control"
                             placeholder="Project description" required></textarea>
                         <div class="form-row text-center">
                             <div class="col">
